@@ -1,0 +1,18 @@
+Preprocessing:
+Numerical Representation: Categorical data was converted to numerical values to apply logistic regression.
+Removing Low Variance Features: Features with low variance were removed to improve model performance.
+Feature Importance: Due to limited domain knowledge, feature importance was assessed by plotting values and analyzing graphs.
+Modeling:
+Separate Models: Separate models were trained for predicting the xyz vaccine and the seasonal vaccine.
+Logistic Regression: Used logistic regression for both models.
+ROC and AUC: Implemented ROC and AUC from the Sklearn module to evaluate the models.
+Process
+Train and Predict:
+Separated the target variables (xyz_vaccine and seasonal_vaccine) and trained two logistic regression models.
+Predicted twice to obtain probabilities for both vaccines.
+Model Evaluation:
+Calculated ROC AUC scores to evaluate model performance.
+Plotted ROC curves and selected the model with the highest score.
+Final Predictions:
+Applied the selected model to the test set.
+Saved the predictions to a CSV file.
